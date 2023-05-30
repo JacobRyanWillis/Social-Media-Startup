@@ -1,7 +1,7 @@
 const { Thought, User } = require("../models");
 
 const thoughtController = {
-  getThoughts(req, res) {
+  getThought(req, res) {
     Thought.find()
       .sort({ createdAt: -1 })
       .then((dbThoughtData) => {
