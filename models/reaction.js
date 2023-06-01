@@ -1,5 +1,5 @@
 const { Schema, Types } = require("mongoose");
-const dateFormat = require('../utils/dateFormat')
+const dateformat = require('../utils/dateformat')
 
 const reactionSchema = new Schema(
   {
@@ -12,7 +12,7 @@ const reactionSchema = new Schema(
       required: true,
       maxlength: 280,
     },
-    uername: {
+    username: {
       type: String,
       required: true,
     },
